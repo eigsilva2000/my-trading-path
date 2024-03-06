@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--header: logo, navbar y menú desplegable-->
-    <header>
+    <header id="header">
         <div class="logo">
             <!-- Logo en el medio -->
             <img src="./../img/logo-limpio.png" alt="Logo">
@@ -24,7 +24,7 @@
         <!--navbar, template sacado de bootstrap-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menu</a>
+              <a class="navbar-brand" href="./../index/index.html">Menu</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -38,9 +38,6 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./../html/share-your-blog.html">Share Your Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./../html/learn.html">Learn The Basics</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./../html/contact-us.html">Contact Us</a>
@@ -72,19 +69,70 @@
             </div>
         </nav>
     </header>
-    <div class="row">
-        <div class="col">
-            Trading is hard. The theory can be ambiguous, not all sources of knowledge might work, not only because of the people trying to purposely deceive us or scam us (which can be hard to spot), there is also people who thinks what they are teaching is right while it's not (and that's even harder to spot if you are unlucky enough to find the wrong sources to learn), and there is another group in the middle; the ones who teach you just enough so you know you are still missing something, so they can keep teaching you, of course, with a price. And that's not it! Even when if you know all what you need to be able to trade, there is yet a harder part, the emotional one.
-        </div>
-        <div class="col">
-            Trading is like swimming, you can read all you want about it, you can practice swimming on the ground, but it doesn't matter how much you learn from the theory, when you jump into the pool you won't be able to swim, not only because of the lack of practice, but also the fear of drawning. This fear of drawning exists in trading, and it can be really hard to overcome. Long story short, as traders, we have 2 challenges to face: how to learn, and how to practice without drowning. The purpose of this page is not only for me to keep growing as a trader, but for to prevent others to make my mistakes, and if it's possible, to create a community.
-        </div>
-    </div>
     <!--p vacío para dejar espacio, la forma más rápida que se me ocurrió-->
     <p></p>
-    <div>
-        <h2 class="subtitulo"> Most watched lately </h2>
+    <div class="subtitulo">
+        <h2>Learn the Basics</h2>
     </div>
+    <div class="accordion accordion-flush" id="bodyAccordionFlush1"> <!-- Cambiado el id para que sea independiente cada accordion -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bodyCollapseOne" aria-expanded="false" aria-controls="bodyCollapseOne">
+              The History of Trading
+            </button>
+          </h2>
+          <div id="bodyCollapseOne" class="accordion-collapse collapse" data-bs-parent="#bodyAccordionFlush1"> <!-- Cambiado el id para que sea independiente cada accordion -->
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion accordion-flush" id="bodyAccordionFlush2"> <!-- Cambiado el id para que sea independiente cada accordion -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bodyCollapseTwo" aria-expanded="false" aria-controls="bodyCollapseTwo">
+              Key Concepts
+            </button>
+          </h2>
+          <div id="bodyCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#bodyAccordionFlush2"> <!-- Cambiado el id para que sea independiente cada accordion -->
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion accordion-flush" id="bodyAccordionFlush3"> <!-- Cambiado el id para que sea independiente cada accordion -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bodyCollapseThree" aria-expanded="false" aria-controls="bodyCollapseThree">
+              Technical Trading
+            </button>
+          </h2>
+          <div id="bodyCollapseThree" class="accordion-collapse collapse" data-bs-parent="#bodyAccordionFlush3"> <!-- Cambiado el id para que sea independiente cada accordion -->
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="accordion accordion-flush" id="bodyAccordionFlush4"> <!-- Cambiado el id para que sea independiente cada accordion -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bodyCollapseFour" aria-expanded="false" aria-controls="bodyCollapseFour">
+              Fundamental Trading
+            </button>
+          </h2>
+          <div id="bodyCollapseFour" class="accordion-collapse collapse" data-bs-parent="#bodyAccordionFlush4"> <!-- Cambiado el id para que sea independiente cada accordion -->
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
         <a href="#header">Back to top</a>
         <a href="./../html/our-policy.html">Our Policy</a>

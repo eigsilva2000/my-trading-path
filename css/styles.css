@@ -1,17 +1,95 @@
 /*Clases se llaman con . ids se llaman con #*/
+/*Reset básico*/
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
 header {
     text-align: center;
 }
-
 header .logo img {
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto;
 }
-
 header .logo-nombre h1 {
     text-align: center;
-    margin-top: 10px; /* Puedes ajustar el margen superior según sea necesario */
+    margin-top: 5px;
 }
 body .col {
     margin: 10px;
+}
+/*Estilo de share-your trades con el uso de flex y pseudoclases*/
+.img-share {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas en dispositivos más pequeños */
+    justify-content: space-between; /* Ajusta el espacio entre las imágenes */
+}
+.imagen-trade1 {
+    flex: 1; /* Hace que las imágenes se expandan para ocupar el espacio disponible */
+    width: 40%;
+    margin: 10px; /* Espacio entre las imágenes */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra alrededor del borde */
+    transition: transform 0.3s ease-in-out; /*para que el efecto del hover sea más progresivo*/
+}
+/*Para que se agranden las fotos al acercar el mouse*/
+.imagen-trade1:hover {
+    transform: scale(1.2)
+}
+.imagen-trade2 {
+    flex: 1; /* Hace que las imágenes se expandan para ocupar el espacio disponible */
+    width: 40%;
+    margin: 10px; /* Espacio entre las imágenes */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra alrededor del borde */
+    transition: transform 0.3s ease-in-out; /*para que el efecto del hover sea más progresivo*/
+}
+.imagen-trade2:hover {
+    transform: scale(1.2)
+}
+.imagen-trade3 {
+    flex: 1; /* Hace que las imágenes se expandan para ocupar el espacio disponible */
+    width: 40%;
+    margin: 10px; /* Espacio entre las imágenes */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra alrededor del borde */
+    transition: transform 0.3s ease-in-out; /*para que el efecto del hover sea más progresivo*/
+}
+.imagen-trade3:hover {
+    transform: scale(1.2)
+}
+.imagen-trade4 {
+    flex: 1; /* Hace que las imágenes se expandan para ocupar el espacio disponible */
+    width: 40%;
+    margin: 10px; /* Espacio entre las imágenes */
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Sombra alrededor del borde */
+    transition: transform 0.3s ease-in-out; /*para que el efecto del hover sea más progresivo*/
+}
+.imagen-trade4:hover {
+    transform: scale(1.2)
+}
+footer {
+    display: block; /*Para que ocupe todo el espacio*/
+    background-color: azure;
+    border: 1px solid black;
+}
+footer a{
+    /*Volviéndolo responsive*/
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    gap: 500px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex: 1; /*Para que cada enlace ocupe el mismo espacio*/
+}
+.col a{
+    text-decoration: none;
 }

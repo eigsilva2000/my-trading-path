@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--header: logo, navbar y menú desplegable-->
-    <header>
+    <header id="header">
         <div class="logo">
             <!-- Logo en el medio -->
             <img src="./../img/logo-limpio.png" alt="Logo">
@@ -40,24 +40,23 @@
                     <a class="nav-link" href="./share-your-blog.html">Share Your Blogs</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="./learn.html">Learn The Basics</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="./contact-us.html">Contact Us</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./our-policy.html">Our Policy</a>
-                  </li>
                 </ul>
               </div>
             </div>
             <!--menú desplegable, accordion sacado de bootstrap, no se me ocurrió otro modo para que esté en la misma línea del navbar que poniéndolo dentro del mismo, con grid no me funcionó y no se me ocurrió otra manera de hacer un menú desplegable usando únicamente html y css-->
-            <!--No es necesario, pero me parece que sería mejor que los accordions estén en alineados horizontalmente en vez de verticalmente-->
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Trading books
+                      Extra help!
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -67,35 +66,79 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Trading chanels
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <!--Dejo el lorem como ejemplo mientras encuentro links buenos-->
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum, assumenda aliquam fugiat fuga illo, facilis aspernatur iure eius id optio quibusdam dolores tenetur ullam, ducimus modi libero laboriosam dolor!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Trading podcasts
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <!--Dejo el lorem como ejemplo mientras encuentro links buenos-->
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum, assumenda aliquam fugiat fuga illo, facilis aspernatur iure eius id optio quibusdam dolores tenetur ullam, ducimus modi libero laboriosam dolor!</p>
-                    </div>
-                  </div>
-                </div>
             </div>
         </nav>
     </header>
+    <div class="row">
+        <div class="col">
+            <h3 class="subtitulo2">Be Respectful to Others</h3>
+            <ul>
+                <li>Treat all members with courtesy and respect.</li>
+                <li>Avoid offensive language, personal attacks, or any form of harassment.</li>
+                <li>Foster a positive and supportive environment.</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="subtitulo2">Only Post Trading-Related Content</h3>
+            <ul>
+                <li>Ensure that all posts, blogs, podcasts, and YouTube channels are directly related to trading.</li>
+                <li>Avoid off-topic discussions or unrelated content.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3 class="subtitulo2">No SPAM</h3>
+            <ul>
+                <li>Do not engage in spamming activities, including unsolicited promotional content.</li>
+                <li>Refrain from repetitive or irrelevant posting.</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="subtitulo2">No Discrimination</h3>
+            <ul>
+                <li>Do not discriminate against others based on race, ethnicity, gender, religion, or any other factors.</li>
+                <li>Foster a community where everyone feels welcome.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3 class="subtitulo2">Respect Privacy</h3>
+            <ul>
+                <li>Avoid sharing personal information about yourself or others without explicit consent.</li>
+                <li>Respect the confidentiality of private discussions and trades.</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="subtitulo2">No Financial Advice</h3>
+            <ul>
+                <li>Do not provide or seek financial advice within the community.</li>
+                <li>Encourage members to consult with financial professionals for personalized advice.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3 class="subtitulo2">Legal and Ethical Standards</h3>
+            <ul>
+                <li>Adhere to all relevant legal and ethical standards related to trading.</li>
+                <li>Do not engage in activities that violate laws or regulations.</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3 class="subtitulo2">Cite Sources</h3>
+            <ul>
+                <li>When sharing information or analyses, provide proper citations and attribute sources.</li>
+                <li>Avoid plagiarism and respect intellectual property rights.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="#header">Back to top</a>
+        <a href="./../html/our-policy.html">Disclaimer</a>
+        <a href="">Follow Us!</a> <!--No pongo link porque no tengo-->
+    </footer>
     <!--link de bootstrap al fondo de body para que funcione bien-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
