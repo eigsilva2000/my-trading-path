@@ -93,3 +93,24 @@ footer a{
 .col a{
     text-decoration: none;
 }
+/*Estilos de share-your-blog*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; /*para que el efecto del hover sea más progresivo*/
+}
+.grid-item h2 {
+    margin-bottom: 10px;
+}
+.grid-item:hover {
+    transform: scale(1.2)
+}
