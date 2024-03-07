@@ -114,3 +114,7 @@ footer a{
 .grid-item:hover {
     transform: scale(1.2)
 }
+.subtitulo {
+    text-align: center;
+    text-justify: center;
+}
